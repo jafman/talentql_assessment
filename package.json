@@ -2,9 +2,12 @@
   "name": "talentql_assessment",
   "version": "1.0.0",
   "description": "Build and deploy a very simple API that does the following",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,11 @@
   },
   "homepage": "https://github.com/jafman/talentql_assessment#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "express-rate-limit": "^6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
