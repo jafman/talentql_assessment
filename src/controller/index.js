@@ -1,6 +1,5 @@
 const howoldController = (req, res) => {
-    const { query } = req;
-    console.log('Query:', query)
+    const { query: { dob } } = req;
     res.status(200).json({
         status: 'success',
         message: 'Good Boy'
