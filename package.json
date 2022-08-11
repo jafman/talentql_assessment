@@ -1,0 +1,19 @@
+{
+  "name": "talentql_assessment",
+  "version": "1.0.0",
+  "description": "Build and deploy a very simple API that does the following",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jafman/talentql_assessment.git"
+  },
+  "author": "Jafar Kamar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jafman/talentql_assessment/issues"
+  },
+  "homepage": "https://github.com/jafman/talentql_assessment#readme"
+}
