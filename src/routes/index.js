@@ -1,12 +1,8 @@
 import { Router } from 'express';
+import howoldController from "../controller/index.js";
 
 const howoldRoute = Router();
 
-howoldRoute.get('/', (req, res)=>{
-    res.status(200).json({
-        status: 'success',
-        message: 'Good Boy'
-    })
-});
+howoldRoute.get('/', howoldController);
 
 export default howoldRoute;
