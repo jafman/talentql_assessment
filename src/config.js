@@ -14,7 +14,11 @@ const config = (app) => {
     // adds middleware that parses requests with application/json data encoding
     app.use(json());
 
+    app.get('/', (req, res)=>res.send('Welcome.'));
+
     app.use('/howold', howoldRoute);
+
+    app.use('*', (req, res)=>res.send('Non existent route!'));
 
     // listen
     app.listen(port, ()=>{
