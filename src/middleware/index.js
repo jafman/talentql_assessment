@@ -4,7 +4,7 @@ const dobValidator = (req, res, next) => {
     if(!dob) {
         res.status(400).json({
             status: 'error',
-            message: 'Parameter dob is missing!'
+            error: 'Parameter dob is missing!'
         });
         return;
     }
@@ -13,7 +13,7 @@ const dobValidator = (req, res, next) => {
     if(isNaN(parsedDate.getTime())){
         res.status(400).json({
             status: 'error',
-            message: 'Invalid time stamp!'
+            error: 'Invalid time stamp!'
         });
         return;
     }
