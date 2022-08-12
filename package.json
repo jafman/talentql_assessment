@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "",
-    "start": "npm run src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
