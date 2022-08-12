@@ -1,6 +1,7 @@
 import { json, urlencoded } from 'express';
 import cors from 'cors';
 import howoldRoute from "./routes/index.js";
+import { apiLimiter } from "./middleware/index.js";
 
 const port = process.env.PORT || 3000;
 
@@ -15,6 +16,9 @@ const config = (app) => {
     app.use(json());
 
     app.get('/', (req, res)=>res.send('Welcome.'));
+
+    // Apply the rate limiting middleware
+    app.use('/howold', apiLimiter);
 
     app.use('/howold', howoldRoute);
 
