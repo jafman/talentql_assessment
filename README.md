@@ -1,4 +1,5 @@
 # Backend Assessment
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cce32d82753b4ae4985f0ee5a67be01a)](https://www.codacy.com/gh/jafman/talentql_assessment/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jafman/talentql_assessment&amp;utm_campaign=Badge_Grade)
 
 Build and deploy a very simple API that does the following
 
